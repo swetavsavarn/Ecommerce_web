@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+   <button id="btn" class="btn">☰</button>
+
+        <nav id="nav">
+            <ul>
+               
+                <li><a href="index.html">My Account</a></li>
+                <li><a href="myorder.html">My orders</a></li>
+                <li><a href="setting.html">Setting</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><button id="hii" class="hii">🙋‍♂️</button></li>
+                 <li><button id="open" class="open">🔔</button></li>
+            </ul>
+        </nav>
+       
+   <div id="myOrder" class="Container">
+
+   </div>
+ 
+   <script>
+    const text = 'We Are Providing The Best Services. . . .';
+
+let index = 0;
+  
+ function writetext() {
+
+  myOrder.innerText = text.slice(0,index);
+
+  index++;
+
+  if(index> text.length-1)
+  {
+     index = 0;
+  }
+ }
+setInterval(writetext,120);
+   </script>
+</body>
+</html>

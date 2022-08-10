@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce </title>
+    <link rel="stylesheet" href="./style2.css">
+    <script src="./index2.js" defer></script>
+</head>
+<body style="background-color:rgb(0, 20, 38); color: aliceblue ;">
+    <div id="EcommerceContainer">
+        <header>
+            <ul class='header'>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="setting.html">STORE</a></li>
+                <li><a href="./aboutUs.html">ABOUT</a></li>
+                <a href="#cart" class="cart-holder">cart<span class='cart-number'>0</span></a>
+            </ul>
+            <h1 style="font-size: 50px; text-align:center; top:10px">Offers Of The Day <p style="font-size:20px; " id="demo"></p> <p style="font-size:15px; color:red">left</p></h1>
+        </header>
+        <section id="music" class="container">
+            <h2>Top Selection</h2>
+            <div id ="music-content">
+                <div id='album1'>
+                    <h3 style="color: white;">Shoes <p style="font-size:15px">under 500</p></h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://rukminim1.flixcart.com/flap/150/150/image/d5556df6b84e2e08.jpg?q=70" alt="">
+                    </div>
+                                    <div class="prod-details">
+                        <span>₹<span>499</span></span>
+                        <button class="shop-item-button" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+                <div id='album2'>
+                    <h3 style="color: white;">Shoes <p style="font-size:15px">under 1000</p></h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://rukminim1.flixcart.com/image/150/150/j7qi9ow0/shoe/f/s/m/gc-1868115-45-woodland-tobacco-original-imaexx3gwcgjgunb.jpeg?q=70" alt="">
+                    </div>
+                                    <div class="prod-details">
+                        <span>₹<span>999</span></span>
+                        <button class="shop-item-button" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+                <div id='album3'>
+                    <h3 style="color: white;">Bedsheet</h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://rukminim1.flixcart.com/image/150/150/kfoapow0/blanket/k/h/z/1-double-comforter-orange-151033-ddecor-live-beautiful-original-imafw3addmyxgpbz.jpeg?q=70" alt="">
+                    </div>
+                                    <div class="prod-details">
+                        <span>₹<span>399</span></span>
+                        <button class="shop-item-button" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+                <div id='album4'>
+                    <h3 style="color: white;">Bags</h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://rukminim1.flixcart.com/flap/150/150/image/c19b61765085fad3.jpg?q=70" alt="">
+                    </div>
+                                    <div class="prod-details">
+                        <span>₹<span>499</span></span>
+                        <button class="shop-item-button" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="Products" class="container">
+            <h2>New Products</h2>
+        </section>
+        <section id="merch" class="container">
+            <h2 style="color: white;">More to Explore</h2>
+            <div id="merch-content">
+                <div id="t-shirt">
+                    <h3>T-Shirt</h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://rukminim1.flixcart.com/image/357/428/kq9ta4w0/t-shirt/l/a/7/xl-723-2-723-6-723-7-ftx-original-imag4bmyq6ahzgez.jpeg?q=50" alt="">
+                    </div>
+                                <div class="prod-details">
+                        <span>₹<span>299</span></span>
+                        <button class="shop-item-button" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+                <div id="coffee-cup">
+                    <h3>Shirt</h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://rukminim1.flixcart.com/image/357/428/k70spzk0/shirt/w/u/w/m-hlsh010207-highlander-original-imafpchw9nv5ukjt.jpeg?q=50" alt="">
+                    </div>
+                                <div class="prod-details">
+                        <span>₹<span>349</span></span>
+                        <button class="shop-item-button" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="cart" class="container">
+            <h2>CART</h2>
+            <button class="cancel">X</button>
+            <div class="cart-row cart-header">
+                <span class='cart-item cart-column'>ITEM</span>
+                <span class='cart-price cart-column'>PRICE</span>
+                <span class='cart-quantity cart-column'>QUANTITY</span>
+            </div>
+            <div class='cart-items'>
+                <!-- <div class="cart-row">
+                    <span class='cart-item cart-column'>
+                        <img class='cart-img' src="img/Shirt.png" alt="">
+                        <span>T-Shirt</span>
+                    </span>
+                    <span class='cart-price cart-column'>$19.99</span>
+                    <span class='cart-quantity cart-column'>
+                        <input type="text">
+                        <button>REMOVE</button>
+                    </span>
+                </div>
+                <div class="cart-row">
+                    <span class='cart-item cart-column'>
+                        <img class='cart-img' src="/img/Album 3.png" alt="">
+                        <span>Album 3</span>
+                    </span>
+                    <span class='cart-price cart-column'>$9.99</span>
+                    <span class='cart-quantity cart-column'>
+                        <input type="text">
+                        <button>REMOVE</button>
+                    </span>
+                </div> -->
+            </div>
+            <div class="cart-total">
+                <span>
+                    <span class='total-title'> <strong>Total</strong>
+                        </span>
+                        ₹<span id='total-value'>0</span>
+                </span>
+            </div>
+            <button class='purchase-btn'; id="purchase-btn_id"; type='button'>PURCHASE</button>
+        </section>
+
+        <button class="cart-btn-bottom"> <a href="#cart" class="cart-bottom">See the cart</a></button>
+    </div>
+    <!-- Toggle notification -->
+    <div id="container"></div>
+    <footer>
+        <div class="footer-title">
+            The Generics
+        </div>
+        <div class="footer-icons">
+            <ul>
+                <li><a href="https://www.youtube.com">
+                    <img src="./img/6260efc8fc9a9002669d2f4ad9956cc0.jpg" alt="">
+                </a></li>
+                <li><a href="https://spotify.com">
+                    <img src="./img/Spotify Logo.png" alt="">
+                </a></li>
+                <li><a href="https://facebook.com">
+                    <img src="./img/Facebook Logo.png" alt="">
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 20, 2022 15:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+</body>
+</html>

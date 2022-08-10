@@ -1,0 +1,26 @@
+.main-div
+{
+    border: 1.5px solid black;
+    border-radius: 100px;
+    background-color: rgb(47, 4, 69);
+    font-family: arial;
+  font-size: 24px;
+ color: white;
+
+  outline: dashed 1px black;
+  /* Center vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+    background-color: rgb(27, 4, 47);
+  
+}
+.submit
+{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+    cursor: pointer;
+}

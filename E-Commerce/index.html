@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>E-Commerce</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+     <header class="in_header">
+        <div style="cursor:pointer ;" onclick="location.href='myaccount.html';" class="in_div">
+         TopOffers
+        </div>
+        <div class="in_div">
+            Grocery
+           </div>
+           <div class="in_div">
+            Mobiles
+           </div>
+           <div class="in_div">
+            Fashion
+           </div>
+           <div class="in_div">
+            Electronics
+           </div>
+           <div class="in_div">
+            Appliances
+           </div>
+           <div class="in_div">
+            Travel
+           </div>
+           <div class="in_div">
+            Toys 
+           </div>
+           <div class="in_div">
+            More
+           </div>
+
+        <nav class="in_nav">
+hello
+        </nav>
+     </header>
+<div class="carousel">
+    <div class="image-container" id="imgs">
+        <img src="https://rukminim1.flixcart.com/flap/9000/720/image/a74a426c0771ff5c.jpg?q=50" alt="loading....">
+        <img src="https://rukminim1.flixcart.com/flap/9000/720/image/b820735717414883.jpg?q=50" alt="loading....">
+        <img src="https://rukminim1.flixcart.com/flap/9000/720/image/7563f6ab6d0de200.jpg?q=50" alt="loading....">
+        <img src="https://rukminim1.flixcart.com/flap/9000/720/image/9aa2d15ca0682b72.jpg?q=50" alt="">
+        <img src="https://rukminim1.flixcart.com/flap/9000/720/image/8da4a86eba1d5015.jpg?q=50" alt="">
+    </div>
+</div>
+
+      <div id="header" class="header"></div>
+        <button id="btn" class="btn">☰</button>
+
+        <nav id="nav">
+            <ul>
+               
+                <li><a href="myaccount.html">My Account</a></li>
+                <li><a href="myorder.html">My orders</a></li>
+                <li><a href="setting.html">Setting</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><button id="hii" class="hii">🙋‍♂️</button></li>
+                 <li><button id="open" class="open">🔔</button></li>
+            </ul>
+        </nav>
+        <button id="darkmode" class="darkmode">🖤<input type="checkbox" name="toggle" id="toggle" hidden> </button>
+        <div id="container"></div>
+        <div class="popup-container" id="popupcontainer">
+            <div class="popup">
+              <button class="close" id="close">x</button>
+              <h1>Notifications</h1>
+              <p>Your Notifications will appear here.</p>
+            </div>
+        </div>
+        <div class="zoom" id="zoom">
+            <img id="zoomimg" class="zoomimg" src="https://rukminim1.flixcart.com/image/9000/720/k6tniq80/book/9/6/9/you-don-t-know-js-types-grammar-original-imafp7azqa6jvszk.jpeg?q=70" alt="Zoom Image">
+        </div>
+        <script>
+            const text = 'We Are Providing The Best Services. . . .';
+        
+        let index = 0;
+          
+         function writetext() {
+        
+          header.innerText = text.slice(0,index);
+        
+          index++;
+        
+          if(index> text.length-1)
+          {
+             index = 0;
+          }
+         }
+        setInterval(writetext,120);
+           </script>
+
+    </body>
+</html>
